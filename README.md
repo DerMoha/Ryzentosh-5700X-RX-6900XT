@@ -28,8 +28,8 @@ I would recommend you doing your own research and building your EFI by yourself 
 ### Not working
 - Audio: Audio should work after patching it with AppleALC, but i use a USB headset so i did not want to mess with that. 
 - Sleep: Sleep is a gamble. Sometimes it works and sometimes the PC crashes / turns off after entering sleep state.
-- Airdrop, Handoff (Wifi and Bluetooth): I dont want to choke my graphics card but if you really need Wifi or Bluetooth buy one of the PCI-E cards mentioned on the [wireless buyer's guide](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/pcie.html).
-- Discord only works in browser as the desktop version uses some libraries that only work on Intel (at least thats what i understood). Read more about this issue and how to fix it [here](https://www.macos86.it/topic/5489-tutorial-for-patching-binaries-for-amd-hackintosh-compatibility/).
+- Airdrop, Handoff (Wifi and Bluetooth): I dont want to choke my graphics card but if you really need Wifi or Bluetooth buy one of the PCI-E cards mentioned on the [wireless buyer's guide](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/pcie.html)
+- Discord only works in browser as the desktop version uses some libraries that only work on Intel (at least thats what i understood). Read more about this issue and how to fix it [here](https://www.macos86.it/topic/5489-tutorial-for-patching-binaries-for-amd-hackintosh-compatibility/)
 
 # The EFI itself
 ## Gathering EFI Files
@@ -48,14 +48,14 @@ Now this is the fun part.
 
 For 5700X, 6900XT
 - [Lilu.kext](https://github.com/acidanthera/Lilu/releases)
-- [VirtualSMC.kext]
+- [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases)
 - From [SMCAMDProcessor](https://github.com/trulyspinach/SMCAMDProcessor) you will need both SMCAMDProcessor.kext and AMDRyzenCPUPowerManagement.kext
 - [AppleMCEReporterDisable.kext](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)
 - [RadeonSensor.kext](https://github.com/aluveitie/RadeonSensor)
 
 For B450:
 - [USBToolBox.kext](https://github.com/USBToolBox/kext)
-- Make sure that if you use the USBToolBox.kext above, you also map your USBs using [USBToolBox Tool](https://github.com/USBToolBox/tool). 
+- Make sure that if you use the USBToolBox.kext above, you also map your USBs using [USBToolBox Tool](https://github.com/USBToolBox/tool)
 - [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)
 
 This should be all you need.
